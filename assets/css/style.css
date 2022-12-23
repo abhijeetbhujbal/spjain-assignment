@@ -1,0 +1,166 @@
+/* Custom CSS */
+
+/* Webfont Poppins & Roboto */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@400;500&display=swap');
+
+/* Default Style */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+/* Hr */
+
+.text-block.with-border {
+    border-bottom: 2px solid #fbbf00;
+    width: 110px;
+    margin: 25px auto;
+    z-index: 3;
+    position: relative;
+}
+
+.text-block.with-border.left {
+    margin: 25px 0px;
+
+}
+
+/* Banner */
+
+.banner h1 {
+    font-size: 30px;
+    font-weight: 600;
+    z-index: 3;
+    position: relative;
+
+}
+
+.banner p {
+    font-size: 18px;
+    z-index: 3;
+    position: relative;
+}
+
+.banner {
+    background: url(../img/header-banner.jpg) no-repeat top/cover;
+    min-height: 400px;
+}
+
+.s-overlay.banner:before {
+    background: linear-gradient(89.05deg, rgb(58 58 84 / 80%) 33.67%, rgba(0, 0, 0, 0) 84.2%);
+    opacity: 0.9;
+}
+
+.s-overlay:before {
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.s-overlay:before {
+    opacity: 0.8;
+    z-index: 2;
+}
+
+/* Servies */
+
+.bg-servies {
+    background-color: #2f3685;
+}
+
+.servies h2, .classroom h2, .guest-speaker h2, .social-experience h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.servies p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.back-img::before {
+    z-index: -1;
+    content: "";
+    width: 313px;
+    height: 205px;
+    background: url(../img/bg-2.png) no-repeat;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+}
+
+/* Classroom */
+
+.classroom ul li {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.classroom ul {
+    list-style: none;
+}
+
+.classroom ul li::before {
+    content: "\2022";
+    color: #ffbf00;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Guest Speaker */
+
+.guest-speaker {
+    background: url(../img/guest-speaker-bg.png) no-repeat top/cover;
+}
+
+.list-wrl  {
+    padding-left: 0rem;
+}
+
+.list-wrl li {
+    border-bottom: 1px solid #a7b5bd;
+    padding: 10px 0px 10px 0px;
+    font-size: 15px;
+    list-style: none;
+    padding-top: 10px;
+}
+
+.list-wrl li:last-child {
+    border-bottom: 0px;
+}
+
+
+/* Social Experience */
+
+.social-experience h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-experience p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Media Qurey */
+
+@media(max-width: 992px) {
+    .servies p {
+        font-size: 14px;
+    }
+
+    .servies h2, .classroom h2, .guest-speaker h2, .social-experience h2 {
+        font-size: 26px;
+    }
+}
